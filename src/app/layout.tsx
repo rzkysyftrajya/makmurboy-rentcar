@@ -8,7 +8,7 @@ import { Footer } from "@/components/layout/footer";
 import { WhatsAppFAB } from "@/components/whatsapp-fab";
 import { ThemeProvider } from "@/components/common/theme-provider";
 import { LightboxProvider } from "@/components/lightbox-provider";
-import Script from "next/script"; // Import the Next.js Script component
+import Script from "next/script";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -34,6 +34,84 @@ export const metadata: Metadata = {
       {
         url: "https://placehold.co/1200x630.png",
         width: 1200,
+        height: 630,
+        alt: "Armada Rental Mobil Medan - CV BOY MAKMUR JAYA",
+      },
+    ],
+    locale: "id_ID",
+    type: "website",
+  },
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+    other: [
+      { rel: "manifest", url: "/site.webmanifest" },
+      {
+        rel: "android-chrome",
+        url: "/android-chrome-192x192.png",
+        sizes: "192x192",
+      },
+      {
+        rel: "android-chrome",
+        url: "/android-chrome-512x512.png",
+        sizes: "512x512",
+      },
+    ],
+  },
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="id" className="!scroll-smooth" suppressHydrationWarning>
+      <head>
+        {/* Google tag (gtag.js) */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17502680999"
+        />
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17502680999');
+          `}
+        </Script>
+      </head>
+      <body
+        className={cn(
+          "min-h-screen bg-background font-sans antialiased",
+          poppins.variable
+        )}
+      >
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <LightboxProvider>
+            <Header />
+            <main>{children}</main>
+            <Footer />
+            <Toaster />
+            <WhatsAppFAB />
+          </LightboxProvider>
+        </ThemeProvider>
+      </body>
+    </html>
+  );
+}
         height: 630,
         alt: "Armada Rental Mobil Medan - CV BOY MAKMUR JAYA",
       },
