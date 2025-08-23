@@ -4,7 +4,7 @@ import { PageHeader } from "@/components/common/page-header";
 import Image from "next/image";
 import { useLightbox } from "@/hooks/use-lightbox";
 
-const TOTAL_GALLERY_IMAGES = 49; // <--- Ganti angka ini dengan jumlah gambar
+const TOTAL_GALLERY_IMAGES = 52; // <--- Ganti angka setiap nambah gambar
 
 // Buat array gambar secara dinamis
 const galleryImages = Array.from({ length: TOTAL_GALLERY_IMAGES }, (_, i) => {
@@ -25,7 +25,7 @@ export default function GaleriPage() {
       <PageHeader
         title="Galeri Armada"
         breadcrumb="Beranda / Galeri"
-        imageUrl="/HERO-SECTION.webp" // Menggunakan gambar dari direktori public
+        imageUrl="/HERO-SECTION.webp"
         imageHint="car photography studio"
       />
       <section className="py-16 lg:py-24">
