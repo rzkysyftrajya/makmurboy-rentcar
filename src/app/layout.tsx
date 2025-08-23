@@ -29,10 +29,10 @@ export const metadata: Metadata = {
     title: "Rental & Sewa Mobil Medan Murah - CV BOY MAKMUR JAYA",
     description:
       "Armada lengkap dan terawat untuk segala kebutuhan perjalanan Anda di Medan. Lepas kunci, dengan supir, harian, bulanan. Hubungi kami!",
-    url: "https://www.boymakmurjaya.com",
+    url: "https://www.cvbmjrentcarmedan.com/",
     images: [
       {
-        url: "https://placehold.co/1200x630.png",
+        url: "https://www.cvbmjrentcarmedan.com/_next/image?url=%2FHERO-SECTION.webp&w=1920&q=75",
         width: 1200,
         height: 630,
         alt: "Armada Rental Mobil Medan - CV BOY MAKMUR JAYA",
