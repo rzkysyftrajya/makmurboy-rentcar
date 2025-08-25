@@ -44,8 +44,8 @@ export default function KontakPage() {
                       Alamat Kantor
                     </h3>
                     <p className="text-muted-foreground">
-                      Jl. Tuba IV No.26, Tegal Sari Mandala III, Kec. Medan
-                      Denai, Kota Medan
+                      Jl. Tuba II No.26, Tegal Sari Mandala III, Kec. Medan
+                      Denai, Kota Medan, Sumatera Utara 20227
                     </p>
                   </div>
                 </div>
