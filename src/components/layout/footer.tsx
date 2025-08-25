@@ -180,8 +180,8 @@ export function Footer() {
                   className="w-5 h-5 mt-1 flex-shrink-0"
                 />
                 <span>
-                  Jl. Tuba IV No.26, Tegal Sari Mandala III, Kec. Medan Denai,
-                  Kota Medan
+                  Jl. Tuba II No.26, Tegal Sari Mandala III, Kec. Medan Denai,
+                  Kota Medan, Sumatera Utara 20227
                 </span>
               </div>
               <div className="flex items-start gap-3">
